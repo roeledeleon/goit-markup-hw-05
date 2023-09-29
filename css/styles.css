@@ -24,6 +24,7 @@
   --dark-bg-overlay: var(--GREY);
 
   --section-item-gap: 24px;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -171,10 +172,12 @@ ul {
 .nav-item a.item:hover,
 .nav-item a.item:focus {
   color: var(--highlight-nav-text-color);
+  transition: background-color 250ms var(--timing-function);
   text-decoration: none;
 }
 span#studio:hover {
   color: var(--highlight-nav-text-color);
+  transition: background-color 250ms var(--timing-function);
   text-decoration: none;
 }
 
@@ -193,6 +196,7 @@ span#studio:hover {
 .contact-item a.contact:hover,
 .contact-item a.contact:focus {
   color: var(--highlight-nav-text-color);
+  transition: background-color 250ms var(--timing-function);
   text-decoration: none;
 }
 .contact-link {
@@ -254,6 +258,19 @@ span#studio:hover {
   border: none;
   border-radius: 4px;
 }
+.button-main:hover,
+.button-main:focus {
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+
+  border-radius: 4px;
+  background: var(--OCEAN);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--timing-function);
+}
+
 .button-main:active {
   display: inline-flex;
   padding: 16px 32px;
@@ -353,20 +370,22 @@ span#studio:hover {
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: var(--IRIS);
-  color: var(--CLOUD);
+  background-color: var(--WHITE);
+  color: var(--LIGHT-SLATE);
   border-radius: 50%;
 }
 .socials-icon {
-  fill: currentColor;
+  fill: var(--LIGHT-SLATE);
 }
 .socials-link:hover,
 .socials-link:focus {
+  transition: background-color 250ms var(--timing-function);
   background-color: var(--OCEAN);
 }
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
   fill: var(--WHITE);
+  transition: background-color 250ms var(--timing-function);
 }
 
 svg.client1-icon-a,
@@ -391,6 +410,7 @@ a.client3:hover svg.client3-icon-a,
 a.client4:hover svg.client4-icon-a,
 a.client5:hover svg.client5-icon-a,
 a.client6:hover svg.client6-icon-a {
+  transition: background-color 250ms var(--timing-function);
   display: none;
 }
 a.client1:hover svg.client1-icon-b,
@@ -399,6 +419,7 @@ a.client3:hover svg.client3-icon-b,
 a.client4:hover svg.client4-icon-b,
 a.client5:hover svg.client5-icon-b,
 a.client6:hover svg.client6-icon-b {
+  transition: background-color 250ms var(--timing-function);
   display: block;
 }
 .client-list {
@@ -426,10 +447,12 @@ a.client6:hover svg.client6-icon-b {
 .client-link:hover,
 .client-link:focus {
   border-color: var(--OCEAN);
+  transition: background-color 250ms var(--timing-function);
 }
 .client-icon:hover {
   fill: var(--OCEAN);
   stroke: var(--OCEAN);
+  transition: background-color 250ms var(--timing-function);
 }
 /* End of MAIN Styles */
 
@@ -468,6 +491,7 @@ a.client6:hover svg.client6-icon-b {
   border-radius: 4px;
   background-color: var(--OCEAN);
   color: var(--secondary-text-color);
+  transition: background-color 250ms var(--timing-function);
 }
 .filter-list {
   display: flex;
@@ -506,6 +530,7 @@ a.client6:hover svg.client6-icon-b {
   background: var(--bg-color);
 }
 .project-item:hover {
+  transition: background-color 2500ms var(--timing-function);
   border: 1px solid var(--CLOUD);
   background: var(--WHITE);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -595,9 +620,11 @@ a.client6:hover svg.client6-icon-b {
 .footer-socials-link:hover,
 .footer-socials-link:focus {
   background-color: var(--GREEN);
+  transition: background-color 250ms var(--timing-function);
 }
 .footer-socials-link:hover .footer-socials-icon,
 .footer-socials-link:focus .footer-socials-icon {
   fill: var(--WHITE);
+  transition: background-color 250ms var(--timing-function);
 }
 /* End of FOOTER Styles */
