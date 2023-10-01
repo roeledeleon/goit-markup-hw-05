@@ -717,7 +717,7 @@ a.client6:hover svg.client6-icon-b {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
 }
-.modal-btn {
+.modal-button {
   position: absolute;
   right: 8px;
   top: 8px;
@@ -734,16 +734,16 @@ a.client6:hover svg.client6-icon-b {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-button:hover,
+.modal-button:focus {
   transition: background-color 250ms var(--timing-function);
   background-color: var(--OCEAN);
 }
-.modal-btn:hover .modal-btn-icon,
-.modal-btn:focus .modal-btn-icon {
+.modal-button:hover .modal-button-icon,
+.modal-button:focus .modal-button-icon {
   fill: var(--accent-color);
 }
-.modal-btn-icon {
+.modal-button-icon {
   fill: currentColor;
   transition: fill 250ms var(--timing-function);
 }
@@ -753,11 +753,11 @@ svg.close-black-18dp-1a {
 svg.close-black-18dp-1b {
   display: none;
 }
-.modal-btn:hover .close-black-18dp-1a {
+.modal-button:hover .close-black-18dp-1a {
   transition: background-color 250ms var(--timing-function);
   display: none;
 }
-.modal-btn:hover .close-black-18dp-1b {
+.modal-button:hover .close-black-18dp-1b {
   transition: background-color 250ms var(--timing-function);
   display: block;
 }
